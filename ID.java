@@ -4,6 +4,7 @@ public enum ID {
 
 	Player(),
 	Earth(),
-	Enemy();
-	
+	Enemy(),
+	Asteroid(),
+	Moon();
 }

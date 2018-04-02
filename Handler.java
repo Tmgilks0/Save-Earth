@@ -1,11 +1,21 @@
 package game;
 
 import java.awt.Graphics;
+import java.util.ArrayList;
 import java.util.LinkedList;
 	
 public class Handler {
 
-	LinkedList<GameObject> object = new LinkedList<GameObject>();
+	ArrayList<GameObject> object = new ArrayList<GameObject>();
+	
+	public int getSize(){
+		return object.size();
+	}
+	
+	public GameObject get(int pos)
+	{
+		return object.get(pos);
+	}
 	
 	public void tick() {
 			for(int i = 0; i < object.size(); i++){
